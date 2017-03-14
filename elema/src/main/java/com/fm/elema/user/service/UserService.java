@@ -11,6 +11,11 @@ import com.fm.elema.user.dao.UserDao;
 import com.fm.elema.user.vo.UserVo;
 import com.fm.elema.util.MD5Util;
 
+/**
+ * 处理业务的UserService
+ * @author licanming
+ *
+ */
 @Service
 public class UserService {
 	
