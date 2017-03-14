@@ -32,6 +32,7 @@ public class UserService {
 		if(vo==null){
 			throw  new BusinessException(ErrorNum.LOGIN_MOBILE_ERROR.index,ErrorNum.LOGIN_MOBILE_ERROR.name);
 		}else{
+			//fkelfdjf
 			vo  = userDao.findUserByMoblieAndPwd(mobile, pwd);
 			if(vo==null){
 				throw  new BusinessException(ErrorNum.LOGIN_PASSWORD_ERROR.index,ErrorNum.LOGIN_PASSWORD_ERROR.name);
