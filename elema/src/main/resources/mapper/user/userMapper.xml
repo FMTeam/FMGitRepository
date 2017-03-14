@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fm.elema.user.dao.UserDao">
+<select id="findUserByMobile" parameterType="map" resultType="com.fm.elema.user.vo.UserVo">
+	select 
+	mobile as mobile,
+    nick_name as nickName,
+    sex as sex,
+    age as age
+ from elema_db.account
+ where mobile= #{mobile}
+</select>
+
+<select id=""></select>
+<select id="findUserByMobileAndPwd" parameterType="map" resultType="com.fm.elema.user.vo.UserVo">
+	select 
+	mobile as mobile,
+    nick_name as nickName,
+    sex as sex,
+    age as age
+ from elema_db.account
+ where mobile= #{mobile} and pwd = #{pwd}
+</select>
+
+
+</mapper>
