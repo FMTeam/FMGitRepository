@@ -19,7 +19,6 @@ public class UserDao {
 	public UserVo findUserByMoblie(String mobile){
 		HashMap< String, String> map = new HashMap<String, String>();
 		map.put("mobile", mobile);
-		//呵呵呵呵
 		return sqlSession.selectOne(NAMESPACE+"findUserByMobile", map);
 	}
 	
